@@ -1,0 +1,154 @@
+/* Jobs page introduction */
+
+.jobs-intro {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #5b6861;
+    font-size: 1.05rem;
+}
+
+
+/* Job list */
+
+.job-list {
+    width: calc(75% - 35px);
+}
+
+
+/* Job card */
+
+.job-card {
+    margin-bottom: 30px;
+    padding: 28px;
+    border: 1px solid #dfe5dc;
+    border-radius: 10px;
+    background: #f7f7f0;
+}
+
+
+/* Small number above each job */
+
+.job-number {
+    margin: 0 0 12px;
+    color: #527e1c;
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+
+/* Job title */
+
+.job-card h2 {
+    margin: 0 0 15px;
+    font-size: 2rem;
+    color: #17231f;
+}
+
+
+/* Smaller headings */
+
+.job-card h3 {
+    margin-top: 28px;
+    margin-bottom: 8px;
+    color: #17231f;
+}
+
+
+/* Job description */
+
+.job-description {
+    color: #5b6861;
+    font-size: 1.05rem;
+}
+
+
+/* Lists */
+
+.job-card li {
+    margin-bottom: 7px;
+}
+
+
+/* Information box on the right */
+
+.jobs-aside {
+    float: right;
+    width: 25%;
+    margin: 0 0 30px 35px;
+    padding: 28px;
+    border: 1px solid #dfe5dc;
+    border-radius: 10px;
+    background: #f7f7f0;
+}
+
+
+/* Aside headings */
+
+.jobs-aside h2 {
+    margin-top: 0;
+    color: #17231f;
+}
+
+.jobs-aside h3 {
+    margin-top: 25px;
+    color: #17231f;
+}
+
+
+/* Aside text */
+
+.jobs-aside p {
+    color: #5b6861;
+}
+
+
+/* Aside list */
+
+.jobs-aside ul {
+    padding-left: 20px;
+}
+
+
+/* Clear the floated aside */
+
+.section::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+
+/* Tablet and smaller screens */
+
+@media (max-width: 760px) {
+
+    .jobs-aside {
+        float: none;
+        width: 100%;
+        margin: 0 0 30px;
+    }
+
+    .job-list {
+        width: 100%;
+    }
+
+    .job-card {
+        padding: 24px;
+    }
+
+}
+
+
+/* Phone screens */
+
+@media (max-width: 480px) {
+
+    .job-card {
+        padding: 20px;
+    }
+
+    .job-card h2 {
+        font-size: 1.6rem;
+    }
+
+}
