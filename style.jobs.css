@@ -1,8 +1,38 @@
-/* Jobs page introduction */
+/* Hero */
+
+.jobs-hero {
+    text-align: center;
+}
+
+.jobs-hero h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jobs-hero .hero-text {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Jobs */
+
+.jobs-section {
+    background-color: #ffffff;
+}
+
+.jobs-heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.jobs-heading h2 {
+    margin: 0 0 20px;
+    color: #17231f;
+    font-size: 2.8rem;
+}
 
 .jobs-intro {
-    margin-top: 20px;
-    margin-bottom: 40px;
     color: #5b6861;
     font-size: 1.05rem;
 }
@@ -11,45 +41,55 @@
 /* Job list */
 
 .job-list {
-    width: calc(75% - 35px);
+    width: 70%;
 }
 
 
-/* Job card */
+/* Job cards */
 
 .job-card {
-    margin-bottom: 30px;
-    padding: 28px;
+    margin-bottom: 40px;
+    padding: 38px;
     border: 1px solid #dfe5dc;
-    border-radius: 10px;
-    background: #f7f7f0;
+    border-left: 6px solid #c4f36b;
+    border-radius: 8px;
+    background-color: #f7f7f0;
 }
 
 
-/* Small number above each job */
+/* Job number */
+
+.job-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .job-number {
-    margin: 0 0 12px;
+    margin: 0;
     color: #527e1c;
-    font-size: 0.85rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.job-reference {
+    margin: 0;
+    color: #527e1c;
     font-weight: 800;
 }
 
 
-/* Job title */
+/* Job headings */
 
 .job-card h2 {
-    margin: 0 0 15px;
-    font-size: 2rem;
+    margin: 12px 0 15px;
     color: #17231f;
+    font-size: 2rem;
 }
 
-
-/* Smaller headings */
-
 .job-card h3 {
-    margin-top: 28px;
-    margin-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     color: #17231f;
 }
 
@@ -57,8 +97,32 @@
 /* Job description */
 
 .job-description {
+    max-width: 650px;
     color: #5b6861;
     font-size: 1.05rem;
+}
+
+
+/* Job details */
+
+.job-details {
+    display: flex;
+    gap: 60px;
+    margin: 30px 0;
+    padding: 20px 0;
+    border-top: 1px solid #dfe5dc;
+    border-bottom: 1px solid #dfe5dc;
+}
+
+.job-details p {
+    margin: 0;
+}
+
+.detail-label {
+    margin-bottom: 5px !important;
+    color: #527e1c;
+    font-size: 0.8rem;
+    font-weight: 800;
 }
 
 
@@ -69,58 +133,62 @@
 }
 
 
-/* Information box on the right */
+/* Aside */
 
 .jobs-aside {
     float: right;
     width: 25%;
-    margin: 0 0 30px 35px;
+    margin: 0 0 30px 30px;
     padding: 28px;
-    border: 1px solid #dfe5dc;
-    border-radius: 10px;
-    background: #f7f7f0;
+    border: 2px solid #17231f;
+    border-radius: 8px;
+    background-color: #17231f;
+    color: #ffffff;
 }
 
-
-/* Aside headings */
-
 .jobs-aside h2 {
-    margin-top: 0;
-    color: #17231f;
+    margin-top: 8px;
+    color: #ffffff;
 }
 
 .jobs-aside h3 {
-    margin-top: 25px;
-    color: #17231f;
+    margin-top: 28px;
+    color: #c4f36b;
 }
-
-
-/* Aside text */
 
 .jobs-aside p {
-    color: #5b6861;
+    color: #e0e8e1;
 }
-
-
-/* Aside list */
 
 .jobs-aside ul {
     padding-left: 20px;
 }
 
+.aside-label {
+    margin: 0;
+    color: #c4f36b !important;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
 
-/* Clear the floated aside */
 
-.section::after {
+/* Clear aside */
+
+.jobs-section::after {
     display: block;
     clear: both;
     content: "";
 }
 
 
-/* Tablet and smaller screens */
+/* Tablet */
 
 @media (max-width: 760px) {
+
+    .jobs-heading h2 {
+        font-size: 2rem;
+    }
 
     .jobs-aside {
         float: none;
@@ -133,22 +201,31 @@
     }
 
     .job-card {
-        padding: 24px;
+        padding: 28px;
+    }
+
+    .job-details {
+        flex-direction: column;
+        gap: 15px;
     }
 
 }
 
 
-/* Phone screens */
+/* Phone */
 
 @media (max-width: 480px) {
 
     .job-card {
-        padding: 20px;
+        padding: 22px;
     }
 
     .job-card h2 {
         font-size: 1.6rem;
+    }
+
+    .job-number {
+        font-size: 2rem;
     }
 
 }

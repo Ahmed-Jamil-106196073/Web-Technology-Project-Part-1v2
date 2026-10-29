@@ -11,23 +11,24 @@
           content="Job opportunities at Creative Digital Media Agency">
 
     <meta name="keywords"
-          content="Creative Digital Media Agency, jobs, web developer, designer">
+          content="Creative Digital Media Agency, jobs, web developer, digital designer">
 
     <meta name="author"
           content="Abdulrahman Shehada">
 
     <title>Job List | Creative Digital Media Agency</title>
 
-    <!-- Main design used by the About page -->
+    <!-- Shared CSS -->
     <link rel="stylesheet" href="about.css">
 
-    <!-- Extra styling only for the Jobs page -->
+    <!-- Jobs CSS -->
     <link rel="stylesheet" href="style.jobs.css">
 
-    <!-- Embedded CSS required by the assignment -->
+    <!-- Embedded CSS -->
     <style>
         .jobs-intro {
             max-width: 700px;
+            margin: 0 auto 50px;
         }
     </style>
 </head>
@@ -38,8 +39,8 @@
     <!-- Header -->
     <header class="site-header">
 
-        <a class="brand" href="index.html">
-            Creative <span>Digital Media Agency</span>
+        <a href="index.html" class="brand">
+            Creative Digital <span>Media Agency</span>
         </a>
 
         <nav aria-label="Main navigation">
@@ -49,8 +50,7 @@
                 </li>
 
                 <li>
-                    <a href="jobs.html"
-                       aria-current="page">
+                    <a href="jobs.html" aria-current="page">
                         Job List
                     </a>
                 </li>
@@ -71,170 +71,183 @@
     <main>
 
         <!-- Hero -->
-        <section class="hero">
+        <section class="hero jobs-hero">
 
             <p class="eyebrow">
-                CAREERS AT CREATIVE DIGITAL MEDIA AGENCY
+                WE'RE HIRING
             </p>
 
             <h1>
-                CREATE your future.<br>
-                Build digital experiences.
+                Find your place<br>
+                in our creative team.
             </h1>
 
             <p class="hero-text">
-                Join our creative team and help us design,
-                develop and deliver digital experiences
-                for our clients.
+                Design, develop and create digital experiences
+                with Creative Digital Media Agency.
             </p>
 
-            <a class="button"
-               href="#available-jobs">
-                Explore Jobs &rarr;
+            <a href="#open-positions" class="button">
+                View Open Positions &darr;
             </a>
 
         </section>
 
 
-        <!-- Jobs heading -->
-        <section class="section"
-                 id="available-jobs">
+        <!-- Jobs -->
+        <section class="section jobs-section"
+                 id="open-positions">
 
-            <div class="section-heading">
+            <div class="jobs-heading">
 
                 <p class="eyebrow">
-                    CURRENT OPPORTUNITIES
+                    CURRENT OPENINGS
                 </p>
 
                 <h2>
-                    Join our creative team
+                    Build your future with us
                 </h2>
+
+                <p class="jobs-intro">
+                    We are looking for creative people who enjoy
+                    working with technology, design and digital media.
+                    Explore our current opportunities below.
+                </p>
 
             </div>
 
-            <p class="jobs-intro">
-                We are looking for creative and motivated
-                people who enjoy working with design,
-                technology and digital media.
-            </p>
 
-
-            <!-- Extra information -->
+            <!-- Aside -->
             <aside class="jobs-aside">
 
-                <h2>Why Join Us?</h2>
+                <p class="aside-label">
+                    WHY WORK WITH US?
+                </p>
+
+                <h2>
+                    More than just a job.
+                </h2>
 
                 <p>
-                    Work with designers, developers and
-                    creative professionals on exciting
-                    client projects.
+                    Join a team where creative ideas and technology
+                    come together to produce work for real clients.
                 </p>
 
                 <ul>
-                    <li>Creative work environment</li>
+                    <li>Creative projects</li>
+                    <li>Friendly team environment</li>
                     <li>Professional development</li>
-                    <li>Client-focused projects</li>
                     <li>Inclusive workplace</li>
                 </ul>
 
-                <h3>Inclusive Employment</h3>
+                <h3>
+                    Inclusive Employment
+                </h3>
 
                 <p>
-                    We welcome people from different
-                    backgrounds and encourage applications
-                    from Aboriginal and Torres Strait
-                    Islander peoples.
+                    We welcome people from different backgrounds and
+                    encourage applications from Aboriginal and Torres
+                    Strait Islander peoples.
                 </p>
 
             </aside>
 
 
-            <!-- Job cards -->
             <div class="job-list">
-
 
                 <!-- Job 1 -->
                 <section class="job-card">
 
-                    <p class="job-number">
-                        01 / FD101
-                    </p>
+                    <div class="job-top">
+
+                        <p class="job-number">
+                            01
+                        </p>
+
+                        <p class="job-reference">
+                            FD101
+                        </p>
+
+                    </div>
 
                     <h2>
                         Front-End Web Developer
                     </h2>
 
                     <p class="job-description">
-                        Help us create responsive,
-                        accessible and engaging websites
-                        for our clients.
-                    </p>
-
-                    <p>
-                        <strong>Salary:</strong>
-                        $70,000 - $85,000 per year
-                    </p>
-
-                    <p>
-                        <strong>Reports to:</strong>
-                        Digital Projects Manager
+                        Help us build responsive, accessible and
+                        engaging websites for our clients.
                     </p>
 
 
-                    <h3>Key Responsibilities</h3>
+                    <!-- Job details -->
+                    <div class="job-details">
+
+                        <div>
+                            <p class="detail-label">
+                                SALARY
+                            </p>
+
+                            <p>
+                                $70,000 - $85,000 per year
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="detail-label">
+                                REPORTS TO
+                            </p>
+
+                            <p>
+                                Digital Projects Manager
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <h3>
+                        Key Responsibilities
+                    </h3>
 
                     <ol>
-                        <li>
-                            Develop websites using HTML5
-                            and CSS3.
-                        </li>
-
-                        <li>
-                            Turn design ideas into
-                            working web pages.
-                        </li>
-
-                        <li>
-                            Test websites on different
-                            browsers and screen sizes.
-                        </li>
-
-                        <li>
-                            Follow accessibility and
-                            usability requirements.
-                        </li>
-
-                        <li>
-                            Work with other team members.
-                        </li>
+                        <li>Develop websites using HTML5 and CSS3.</li>
+                        <li>Turn design ideas into working web pages.</li>
+                        <li>Test websites on different browsers and screen sizes.</li>
+                        <li>Follow accessibility and usability requirements.</li>
+                        <li>Work with designers and other team members.</li>
                     </ol>
 
 
-                    <h3>Essential Requirements</h3>
+                    <h3>
+                        Essential Requirements
+                    </h3>
 
                     <ul>
                         <li>Knowledge of HTML5 and CSS3</li>
-                        <li>Understanding of responsive design</li>
+                        <li>Understanding of responsive web design</li>
                         <li>Good communication skills</li>
-                        <li>Good teamwork skills</li>
-                        <li>Attention to detail</li>
+                        <li>Ability to work in a team</li>
+                        <li>Good attention to detail</li>
                     </ul>
 
 
-                    <h3>Preferable Requirements</h3>
+                    <h3>
+                        Preferable Requirements
+                    </h3>
 
                     <ul>
                         <li>Experience using Git and GitHub</li>
-                        <li>Basic UI/UX knowledge</li>
-                        <li>Experience with digital projects</li>
+                        <li>Basic understanding of UI/UX design</li>
+                        <li>Experience working on digital projects</li>
                     </ul>
 
 
-                    <!-- Inline CSS required by the assignment -->
-                    <a class="button"
-                       href="apply.html"
+                    <!-- Inline CSS -->
+                    <a href="apply.html"
+                       class="button"
                        style="margin-top: 10px;">
-                        Apply Now &rarr;
+                        Apply for this role &rarr;
                     </a>
 
                 </section>
@@ -243,104 +256,94 @@
                 <!-- Job 2 -->
                 <section class="job-card">
 
-                    <p class="job-number">
-                        02 / DD202
-                    </p>
+                    <div class="job-top">
+
+                        <p class="job-number">
+                            02
+                        </p>
+
+                        <p class="job-reference">
+                            DD202
+                        </p>
+
+                    </div>
 
                     <h2>
                         Digital Designer
                     </h2>
 
                     <p class="job-description">
-                        Create website layouts,
-                        branding materials and digital
-                        content for client projects.
-                    </p>
-
-                    <p>
-                        <strong>Salary:</strong>
-                        $65,000 - $80,000 per year
-                    </p>
-
-                    <p>
-                        <strong>Reports to:</strong>
-                        Creative Director
+                        Create website layouts, branding materials
+                        and digital content for client projects.
                     </p>
 
 
-                    <h3>Key Responsibilities</h3>
+                    <!-- Job details -->
+                    <div class="job-details">
+
+                        <div>
+                            <p class="detail-label">
+                                SALARY
+                            </p>
+
+                            <p>
+                                $65,000 - $80,000 per year
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="detail-label">
+                                REPORTS TO
+                            </p>
+
+                            <p>
+                                Creative Director
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <h3>
+                        Key Responsibilities
+                    </h3>
 
                     <ol>
-                        <li>
-                            Create website layouts
-                            and design ideas.
-                        </li>
-
-                        <li>
-                            Create visual content
-                            for client projects.
-                        </li>
-
-                        <li>
-                            Work with developers
-                            on website designs.
-                        </li>
-
-                        <li>
-                            Follow client branding
-                            requirements.
-                        </li>
-
-                        <li>
-                            Present design ideas
-                            to the team.
-                        </li>
+                        <li>Create website layouts and design ideas.</li>
+                        <li>Produce visual content for client projects.</li>
+                        <li>Work with developers on website designs.</li>
+                        <li>Follow client branding requirements.</li>
+                        <li>Present design ideas to the creative team.</li>
                     </ol>
 
 
-                    <h3>Essential Requirements</h3>
+                    <h3>
+                        Essential Requirements
+                    </h3>
 
                     <ul>
-                        <li>
-                            Understanding of digital design
-                        </li>
-
-                        <li>
-                            Good visual communication skills
-                        </li>
-
+                        <li>Understanding of digital design principles</li>
+                        <li>Good visual communication skills</li>
                         <li>Good teamwork skills</li>
-
-                        <li>
-                            Strong attention to detail
-                        </li>
-
-                        <li>
-                            Ability to meet deadlines
-                        </li>
+                        <li>Strong attention to detail</li>
+                        <li>Ability to meet deadlines</li>
                     </ul>
 
 
-                    <h3>Preferable Requirements</h3>
+                    <h3>
+                        Preferable Requirements
+                    </h3>
 
                     <ul>
-                        <li>
-                            Experience with Adobe Creative Cloud
-                        </li>
-
-                        <li>
-                            Basic knowledge of HTML and CSS
-                        </li>
-
-                        <li>
-                            Experience creating digital content
-                        </li>
+                        <li>Experience with Adobe Creative Cloud</li>
+                        <li>Basic knowledge of HTML and CSS</li>
+                        <li>Experience creating digital content</li>
                     </ul>
 
 
-                    <a class="button"
-                       href="apply.html">
-                        Apply Now &rarr;
+                    <a href="apply.html"
+                       class="button">
+                        Apply for this role &rarr;
                     </a>
 
                 </section>
@@ -357,8 +360,7 @@
 
         <a href="index.html"
            class="brand footer-brand">
-            Creative Digital
-            <span>Media Agency</span>
+            Creative Digital <span>Media Agency</span>
         </a>
 
         <p>
