@@ -1,7 +1,5 @@
-/* =====================================
-   CREATIVE DIGITAL MEDIA AGENCY
-   JOB APPLICATION PAGE
-   ===================================== */
+/* CREATIVE DIGITAL MEDIA AGENCY 
+JOB APPLICATION PAGE */
 
 /* GENERAL STYLING */
 
@@ -31,9 +29,7 @@ a:focus-visible {
 }
 
 
-/* =====================================
-   HEADER AND NAVIGATION
-   ===================================== */
+/* HEADER AND NAVIGATION */
 
 .site-header {
     display: flex;
@@ -79,9 +75,7 @@ nav a[aria-current="page"] {
 }
 
 
-/* =====================================
-   HERO SECTION
-   ===================================== */
+/* HERO SECTION */
 
 .hero {
     padding: 105px 8% 115px;
@@ -117,9 +111,7 @@ nav a[aria-current="page"] {
 }
 
 
-/* =====================================
-   BUTTONS
-   ===================================== */
+/* BUTTONS */
 
 .button {
     display: inline-block;
@@ -142,9 +134,7 @@ nav a[aria-current="page"] {
 }
 
 
-/* =====================================
-   APPLICATION SECTION
-   ===================================== */
+/* APPLICATION SECTION */
 
 .section {
     padding: 80px 8%;
@@ -173,9 +163,7 @@ nav a[aria-current="page"] {
 }
 
 
-/* =====================================
-   APPLICATION FORM
-   ===================================== */
+/* APPLICATION FORM */
 
 .application-form {
     max-width: 1050px;
@@ -259,9 +247,7 @@ nav a[aria-current="page"] {
 }
 
 
-/* =====================================
-   GENDER RADIO BUTTONS
-   ===================================== */
+/* GENDER RADIO BUTTONS */
 
 .gender-fieldset {
     border: none;
@@ -300,9 +286,7 @@ nav a[aria-current="page"] {
 }
 
 
-/* =====================================
-   SKILLS CHECKBOXES
-   ===================================== */
+/* SKILLS CHECKBOXES */
 
 .form-description {
     margin: 0 0 22px;
@@ -352,9 +336,7 @@ nav a[aria-current="page"] {
 }
 
 
-/* =====================================
-   SUBMIT SECTION
-   ===================================== */
+/* SUBMIT SECTION */
 
 .form-submit {
     padding: 35px;
@@ -384,9 +366,7 @@ nav a[aria-current="page"] {
 }
 
 
-/* =====================================
-   FOOTER
-   ===================================== */
+/* FOOTER */
 
 .site-footer {
     display: flex;
@@ -408,9 +388,7 @@ nav a[aria-current="page"] {
 }
 
 
-/* =====================================
-   ACCESSIBILITY
-   ===================================== */
+/* ACCESSIBILITY */
 
 button:focus-visible,
 input:focus-visible,
@@ -421,9 +399,7 @@ textarea:focus-visible {
 }
 
 
-/* =====================================
-   RESPONSIVE DESIGN - TABLETS
-   ===================================== */
+/* RESPONSIVE DESIGN - TABLETS */
 
 @media (max-width: 760px) {
 
@@ -481,9 +457,7 @@ textarea:focus-visible {
 }
 
 
-/* =====================================
-   RESPONSIVE DESIGN - PHONES
-   ===================================== */
+/* RESPONSIVE DESIGN - PHONES */
 
 @media (max-width: 480px) {
 
