@@ -11,7 +11,7 @@
     <title>Apply Now | Creative Digital Media Agency</title>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="style.apply.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Embedded CSS -->
     <style>
@@ -28,7 +28,10 @@
     <header class="site-header">
 
         <a href="index.html" class="brand">
-            Creative Digital <span>Media Agency</span>
+            <img
+                src="Images/logo.png"
+                alt="Creative Digital Media Agency Logo"
+                class="site-logo">
         </a>
 
         <nav aria-label="Main navigation">
@@ -41,6 +44,7 @@
         </nav>
 
     </header>
+
 
     <main>
 
@@ -246,7 +250,7 @@
                                 name="street"
                                 maxlength="40"
                                 placeholder="Enter your street address"
-                                autocomplete="street-address"
+                                autocomplete="address-line1"
                                 required>
 
                         </div>
@@ -323,7 +327,7 @@
                 </fieldset>
 
 
-                <!-- CONTACT DETAILS -->
+                <!-- CONTACT INFORMATION -->
                 <fieldset class="form-section">
 
                     <legend>04. Contact Information</legend>
@@ -372,14 +376,13 @@
                 </fieldset>
 
 
-                <!-- SKILLS -->
+                <!-- SKILLS AND EXPERIENCE -->
                 <fieldset class="form-section">
 
                     <legend>05. Skills &amp; Experience</legend>
 
                     <p class="form-description">
                         Select the skills that match your experience.
-                        Choose at least one.
                     </p>
 
                     <div class="checkbox-grid">
@@ -388,8 +391,9 @@
                             <input
                                 type="checkbox"
                                 name="skills[]"
-                                value="HTML">
-                            HTML
+                                value="HTML"
+                                required>
+                            HTML *
                         </label>
 
                         <label>
@@ -480,7 +484,10 @@
     <footer class="site-footer">
 
         <a href="index.html" class="brand footer-brand">
-            Creative Digital <span>Media Agency</span>
+            <img
+                src="Images/logo.png"
+                alt="Creative Digital Media Agency Logo"
+                class="footer-logo">
         </a>
 
         <p>
@@ -489,30 +496,6 @@
         </p>
 
     </footer>
-
-    <!-- Ensure at least one skill is selected -->
-    <script>
-        const applicationForm = document.querySelector(".application-form");
-        const skillCheckboxes = applicationForm.querySelectorAll(
-            'input[name="skills[]"]'
-        );
-
-        function validateSkills() {
-            const hasSkill = Array.from(skillCheckboxes).some(
-                checkbox => checkbox.checked
-            );
-
-            skillCheckboxes[0].setCustomValidity(
-                hasSkill ? "" : "Please select at least one skill."
-            );
-        }
-
-        skillCheckboxes.forEach(checkbox => {
-            checkbox.addEventListener("change", validateSkills);
-        });
-
-        validateSkills();
-    </script>
 
 </body>
 </html>

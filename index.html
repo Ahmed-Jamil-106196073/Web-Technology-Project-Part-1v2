@@ -5,75 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Creative Digital Media Agency recruitment website">
+    <meta name="description" content="Creative Digital Media Agency recruitment website">
+    <meta name="keywords" content="Creative Digital, Web Design, Careers, Digital Media">
+    <meta name="author" content="Creative Digital Media Agency">
 
-    <title>Creative Digital Media Agency - Home</title>
+    <title>Creative Digital Media Agency | Home</title>
 
-    <!-- Shared CSS -->
-    <link rel="stylesheet" href="style.apply.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Homepage CSS -->
-    <link rel="stylesheet" href="style.home.css">
+    <!-- Embedded CSS -->
+    <style>
+        .home-section-intro {
+            max-width: 750px;
+            margin-bottom: 35px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- =====================================
-         HEADER AND NAVIGATION
-         ===================================== -->
-
+    <!-- HEADER -->
     <header class="site-header">
 
         <a href="index.html" class="brand">
-            Creative Digital <span>Media Agency</span>
+            <img
+                src="Images/logo.png"
+                alt="Creative Digital Media Agency Logo"
+                class="site-logo">
         </a>
 
         <nav aria-label="Main navigation">
             <ul>
-                <li>
-                    <a href="index.html" aria-current="page">Home</a>
-                </li>
-
-                <li>
-                    <a href="jobs.html">Job List</a>
-                </li>
-
-                <li>
-                    <a href="apply.html">Apply</a>
-                </li>
-
-                <li>
-                    <a href="about.html">About</a>
-                </li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="jobs.html">Job List</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
 
     </header>
 
 
-    <!-- =====================================
-         MAIN CONTENT
-         ===================================== -->
-
     <main>
 
-        <!-- =====================================
-             HERO / WELCOME SECTION
-             ===================================== -->
-
+        <!-- HERO SECTION -->
         <section id="home" class="hero home-hero">
 
-            <p class="eyebrow">
-                WELCOME TO OUR CREATIVE AGENCY
-            </p>
+            <p class="eyebrow">WELCOME TO OUR CREATIVE AGENCY</p>
 
-            <h1>
-                Creativity starts here.
-            </h1>
+            <h1>Creativity starts here.</h1>
 
             <p class="hero-text">
-                We are a creative digital media agency
+                We are Creative Digital Media Agency,
                 specialising in web design, branding,
                 and digital content creation.
             </p>
@@ -83,24 +67,19 @@
                 professional and engaging digital experiences.
             </p>
 
+            <a href="jobs.html" class="button">
+                Explore Careers &rarr;
+            </a>
         </section>
-
-
-        <!-- =====================================
-             ABOUT SECTION
-             ===================================== -->
-
+        
+        <!-- ABOUT SECTION -->
         <section id="about" class="section home-about">
 
             <div class="section-heading">
 
-                <p class="eyebrow">
-                    GET TO KNOW US
-                </p>
+                <p class="eyebrow">GET TO KNOW US</p>
 
-                <h2>
-                    Who We Are
-                </h2>
+                <h2>Who We Are</h2>
 
             </div>
 
@@ -116,9 +95,9 @@
                 <p class="home-description">
                     Our team combines creativity and technology
                     to deliver innovative solutions for clients.
-                    We believe that collaboration, communication,
-                    and continuous learning are essential to
-                    successful digital projects.
+                    We believe collaboration, communication,
+                    and continuous learning are essential
+                    to successful digital projects.
                 </p>
 
                 <a href="about.html" class="button">
@@ -130,21 +109,14 @@
         </section>
 
 
-        <!-- =====================================
-             SERVICES SECTION
-             ===================================== -->
-
+        <!-- SERVICES SECTION -->
         <section id="services" class="section home-services">
 
             <div class="section-heading">
 
-                <p class="eyebrow">
-                    WHAT WE DO
-                </p>
+                <p class="eyebrow">WHAT WE DO</p>
 
-                <h2>
-                    Our Services
-                </h2>
+                <h2>Our Services</h2>
 
             </div>
 
@@ -155,13 +127,10 @@
 
             <div class="services-grid">
 
-                <!-- Service 1 -->
-
+                <!-- SERVICE 1 -->
                 <article class="service-card">
 
-                    <h3>
-                        Website Design &amp; Development
-                    </h3>
+                    <h3>Website Design &amp; Development</h3>
 
                     <p>
                         We create modern, responsive,
@@ -172,13 +141,10 @@
                 </article>
 
 
-                <!-- Service 2 -->
-
+                <!-- SERVICE 2 -->
                 <article class="service-card">
 
-                    <h3>
-                        Branding &amp; Graphic Design
-                    </h3>
+                    <h3>Branding &amp; Graphic Design</h3>
 
                     <p>
                         We help businesses develop
@@ -189,13 +155,10 @@
                 </article>
 
 
-                <!-- Service 3 -->
-
+                <!-- SERVICE 3 -->
                 <article class="service-card">
 
-                    <h3>
-                        Digital Content Creation
-                    </h3>
+                    <h3>Digital Content Creation</h3>
 
                     <p>
                         We produce engaging digital
@@ -206,13 +169,10 @@
                 </article>
 
 
-                <!-- Service 4 -->
-
+                <!-- SERVICE 4 -->
                 <article class="service-card">
 
-                    <h3>
-                        User Experience (UX) Design
-                    </h3>
+                    <h3>User Experience (UX) Design</h3>
 
                     <p>
                         We design accessible and
@@ -227,21 +187,14 @@
         </section>
 
 
-        <!-- =====================================
-             CAREERS SECTION
-             ===================================== -->
-
+        <!-- CAREERS SECTION -->
         <section id="careers" class="section home-careers">
 
             <div class="section-heading">
 
-                <p class="eyebrow">
-                    JOIN OUR CREATIVE TEAM
-                </p>
+                <p class="eyebrow">JOIN OUR CREATIVE TEAM</p>
 
-                <h2>
-                    Build Your Future With Us
-                </h2>
+                <h2>Build Your Future With Us</h2>
 
             </div>
 
@@ -277,38 +230,167 @@
         </section>
 
 
-        <!-- =====================================
-             PROJECT LINKS SECTION
-             ===================================== -->
+        <!-- SEARCH SECTION -->
+        <section class="section search-section">
 
+            <div class="section-heading">
+
+                <p class="eyebrow">FIND YOUR OPPORTUNITY</p>
+
+                <h2>Search Careers</h2>
+
+            </div>
+
+            <p>
+                Looking for your next creative opportunity?
+                Explore the available positions at our agency.
+            </p>
+
+            <form action="jobs.html" method="get" class="search-form" role="search">
+
+                <label for="job-search">
+                    Search for a job
+                </label>
+
+                <div class="search-controls">
+
+                    <input
+                        type="search"
+                        id="job-search"
+                        name="search"
+                        placeholder="e.g. Web Developer"
+                        required>
+
+                    <!-- Inline CSS -->
+                    <button
+                        type="submit"
+                        class="button"
+                        style="cursor: pointer;">
+                        Search Jobs
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- COMPANY INFORMATION TABLE -->
+        <section class="section company-table-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">OUR EXPERTISE</p>
+
+                <h2>What Makes Us Different</h2>
+
+            </div>
+
+            <div class="table-container">
+
+                <table class="company-table">
+
+                    <caption>
+                        Creative Digital Media Agency Services
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Service</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Focus</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Web Development</td>
+                            <td>Responsive and accessible websites</td>
+                            <td>Technology</td>
+                        </tr>
+
+                        <tr>
+                            <td>Graphic Design</td>
+                            <td>Creative branding and visual identity</td>
+                            <td>Creativity</td>
+                        </tr>
+
+                        <tr>
+                            <td>Digital Marketing</td>
+                            <td>Engaging online campaigns</td>
+                            <td>Communication</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3" class="table-highlight">
+                                Combining creativity and technology
+                                to deliver meaningful digital experiences.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACKNOWLEDGEMENT OF COUNTRY -->
+        <section class="section acknowledgement-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">RESPECT AND INCLUSION</p>
+
+                <h2>Acknowledgement of Country</h2>
+
+            </div>
+
+            <p>
+                Creative Digital Media Agency acknowledges
+                the Traditional Custodians of the lands
+                throughout Australia and pays respect to
+                Aboriginal and Torres Strait Islander Elders
+                past and present.
+            </p>
+
+            <p>
+                We recognise the importance of diversity,
+                inclusion, and respectful representation
+                in digital media and creative industries.
+                We welcome applications from Aboriginal
+                and Torres Strait Islander peoples.
+            </p>
+
+        </section>
+
+
+        <!-- PROJECT LINKS SECTION -->
         <section id="project-links" class="section project-links">
 
             <div class="section-heading">
 
-                <p class="eyebrow">
-                    OUR PROJECT
-                </p>
+                <p class="eyebrow">OUR PROJECT</p>
 
-                <h2>
-                    Explore Our Website
-                </h2>
+                <h2>Explore Our Website</h2>
 
             </div>
 
             <p class="home-section-intro">
-                You can view our project source code on GitHub
-                or visit our published website using the links below.
+                Explore our project resources and view
+                the source code of our recruitment website.
             </p>
 
             <div class="project-links-container">
 
-                <!-- GitHub Repository -->
-
+                <!-- GITHUB -->
                 <article class="project-link-card">
 
-                    <h3>
-                        GitHub Repository
-                    </h3>
+                    <h3>GitHub Repository</h3>
 
                     <p>
                         View the source code for our
@@ -326,22 +408,18 @@
                 </article>
 
 
-                <!-- Live Website -->
-
+                <!-- LIVE WEBSITE -->
                 <article class="project-link-card">
 
-                    <h3>
-                        Live Website
-                    </h3>
+                    <h3>Live Website</h3>
 
                     <p>
                         Visit the published version of our
                         Creative Digital Media Agency website.
                     </p>
 
-                    <a
-                        href="YOUR_GITHUB_PAGES_URL"
-                        class="button">
+                    <!-- Replace # with your GitHub Pages URL -->
+                    <a href="#" class="button">
                         Visit Live Website
                     </a>
 
@@ -354,20 +432,52 @@
     </main>
 
 
-    <!-- =====================================
-         FOOTER
-         ===================================== -->
-
+    <!-- FOOTER -->
     <footer class="site-footer">
 
-        <a href="index.html" class="brand footer-brand">
-            Creative Digital <span>Media Agency</span>
-        </a>
+        <div class="footer-content">
 
-        <p>
-            &copy; 2026 Creative Digital Media Agency.
-            All rights reserved.
-        </p>
+            <a href="index.html" class="brand footer-brand">
+
+                <img
+                    src="Images/logo.png"
+                    alt="Creative Digital Media Agency Logo"
+                    class="footer-logo">
+
+            </a>
+
+            <div class="footer-links">
+
+                <!-- Replace email with your group's real email -->
+                <a href="mailto:info@creativedigitalmedia.example">
+                    Contact Us
+                </a>
+
+                <a
+                    href="https://github.com/Ahmed-Jamil-106196073/Web-Technology-Project-Part-1v2"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <!-- Replace # with your Jira project URL -->
+                <a href="#">
+                    Jira Project
+                </a>
+
+                <!-- Replace # with your GitHub Pages URL -->
+                <a href="#">
+                    Live Website
+                </a>
+
+            </div>
+
+            <p>
+                &copy; 2026 Creative Digital Media Agency.
+                All rights reserved.
+            </p>
+
+        </div>
 
     </footer>
 
