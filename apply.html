@@ -13,7 +13,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="style.apply.css">
 
-    <!-- Embedded CSS required by the assignment -->
+    <!-- Embedded CSS -->
     <style>
         .application-intro {
             max-width: 750px;
@@ -42,10 +42,9 @@
 
     </header>
 
-
-    <!-- HERO SECTION -->
     <main>
 
+        <!-- HERO SECTION -->
         <section class="hero">
 
             <p class="eyebrow">JOIN OUR CREATIVE TEAM</p>
@@ -88,6 +87,7 @@
                 action="https://mercury.swin.edu.au/it000000/formtest.php"
                 method="post"
                 class="application-form">
+
 
                 <!-- JOB INFORMATION -->
                 <fieldset class="form-section">
@@ -282,10 +282,7 @@
                                 autocomplete="address-level1"
                                 required>
 
-                                <option value="">
-                                    Select your state
-                                </option>
-
+                                <option value="">Select your state</option>
                                 <option value="VIC">VIC</option>
                                 <option value="NSW">NSW</option>
                                 <option value="QLD">QLD</option>
@@ -391,8 +388,7 @@
                             <input
                                 type="checkbox"
                                 name="skills[]"
-                                value="HTML"
-                                required>
+                                value="HTML">
                             HTML
                         </label>
 
@@ -438,6 +434,7 @@
 
                     </div>
 
+
                     <div class="form-group other-skills">
 
                         <label for="otherskills">
@@ -455,14 +452,14 @@
                 </fieldset>
 
 
-                <!-- SUBMIT -->
+                <!-- SUBMIT SECTION -->
                 <div class="form-submit">
 
                     <p>
                         Please review your information before submitting.
                     </p>
 
-                    <!-- Inline CSS required by assignment -->
+                    <!-- Inline CSS -->
                     <button
                         type="submit"
                         class="button submit-button"
@@ -492,6 +489,30 @@
         </p>
 
     </footer>
+
+    <!-- Ensure at least one skill is selected -->
+    <script>
+        const applicationForm = document.querySelector(".application-form");
+        const skillCheckboxes = applicationForm.querySelectorAll(
+            'input[name="skills[]"]'
+        );
+
+        function validateSkills() {
+            const hasSkill = Array.from(skillCheckboxes).some(
+                checkbox => checkbox.checked
+            );
+
+            skillCheckboxes[0].setCustomValidity(
+                hasSkill ? "" : "Please select at least one skill."
+            );
+        }
+
+        skillCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener("change", validateSkills);
+        });
+
+        validateSkills();
+    </script>
 
 </body>
 </html>
