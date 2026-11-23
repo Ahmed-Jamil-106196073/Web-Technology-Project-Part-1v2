@@ -52,25 +52,10 @@ $matchingJobs = 0;
 <body>
 
     <!-- HEADER -->
-    <header class="site-header">
 
-        <a href="index.html" class="brand">
-            <img
-                src="Images/logo.png"
-                alt="Creative Digital Media Agency Logo"
-                class="site-logo">
-        </a>
+<?php include 'includes/header.inc'; ?>
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.php" aria-current="page">Job List</a></li>
-                <li><a href="apply.html">Apply</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
 
-    </header>
 
 
     <main>
@@ -274,7 +259,7 @@ $matchingJobs = 0;
 
                     <!-- INLINE CSS -->
                     <a
-                        href="apply.html"
+                        href="apply.php"
                         class="button"
                         style="margin-top: 10px;">
                         Apply for this role &rarr;
@@ -387,7 +372,7 @@ $matchingJobs = 0;
                     </ul>
 
 
-                    <a href="apply.html" class="button">
+                    <a href="apply.php" class="button">
                         Apply for this role &rarr;
                     </a>
 
@@ -415,23 +400,11 @@ $matchingJobs = 0;
 
 
     <!-- FOOTER -->
-    <footer class="site-footer">
 
-        <a href="index.html" class="brand footer-brand">
 
-            <img
-                src="Images/logo.png"
-                alt="Creative Digital Media Agency Logo"
-                class="footer-logo">
+1. 
+	 <?php include 'includes/footer.inc'; ?>
 
-        </a>
-
-        <p>
-            &copy; 2026 Creative Digital Media Agency.
-            All rights reserved.
-        </p>
-
-    </footer>
 
 </body>
 </html>

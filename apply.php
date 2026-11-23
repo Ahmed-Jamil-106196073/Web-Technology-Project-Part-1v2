@@ -25,25 +25,11 @@
 <body>
 
     <!-- HEADER -->
-    <header class="site-header">
+   
 
-        <a href="index.html" class="brand">
-            <img
-                src="Images/logo.png"
-                alt="Creative Digital Media Agency Logo"
-                class="site-logo">
-        </a>
+<?php include 'includes/header.inc'; ?>
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.php">Job List</a></li>
-                <li><a href="apply.html" aria-current="page">Apply</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-
-    </header>
+   
 
 
     <main>
@@ -481,21 +467,11 @@
 
 
     <!-- FOOTER -->
-    <footer class="site-footer">
 
-        <a href="index.html" class="brand footer-brand">
-            <img
-                src="Images/logo.png"
-                alt="Creative Digital Media Agency Logo"
-                class="footer-logo">
-        </a>
 
-        <p>
-            &copy; 2026 Creative Digital Media Agency.
-            All rights reserved.
-        </p>
+<?php include 'includes/footer.inc'; ?>
 
-    </footer>
+
 
 </body>
 </html>
