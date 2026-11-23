@@ -1,3 +1,25 @@
+<?php
+// Temporary PHP search until the shared MySQL jobs table is ready.
+$search = $_GET['search'] ?? '';
+if (!is_string($search)) {
+    $search = '';
+}
+$search = trim(substr($search, 0, 100));
+
+// Search the visible text of each existing HTML card, without changing its content.
+function jobMatchesSearch(string $cardHtml, string $keyword): bool
+{
+    if ($keyword === '') {
+        return true;
+    }
+
+    $visibleText = html_entity_decode(strip_tags($cardHtml), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $visibleText = preg_replace('/\s+/u', ' ', $visibleText);
+    return stripos($visibleText, $keyword) !== false;
+}
+
+$matchingJobs = 0;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +64,7 @@
         <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.html" aria-current="page">Job List</a></li>
+                <li><a href="jobs.php" aria-current="page">Job List</a></li>
                 <li><a href="apply.html">Apply</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
@@ -99,6 +121,22 @@
             </div>
 
 
+            <!-- JOB SEARCH -->
+            <form action="jobs.php#open-positions" method="get" class="search-form jobs-search-form" role="search">
+                <label for="job-search">Search Available Jobs</label>
+                <div class="search-controls">
+                    <input
+                        type="search"
+                        id="job-search"
+                        name="search"
+                        placeholder="Search by job title, reference or keyword"
+                        value="<?php echo htmlspecialchars($search, ENT_QUOTES, 'UTF-8'); ?>"
+                    >
+                    <button type="submit" class="button">Search</button>
+                    <a href="jobs.php#open-positions" class="search-clear">Clear</a>
+                </div>
+            </form>
+
             <!-- ASIDE -->
             <aside class="jobs-aside">
 
@@ -139,6 +177,7 @@
             <div class="job-list">
 
                 <!-- JOB 1 -->
+                <?php ob_start(); ?>
                 <section class="job-card">
 
                     <div class="job-top">
@@ -244,7 +283,16 @@
                 </section>
 
 
+                <?php
+                $job1Html = ob_get_clean();
+                if (jobMatchesSearch($job1Html, $search)) {
+                    echo $job1Html;
+                    $matchingJobs++;
+                }
+                ?>
+
                 <!-- JOB 2 -->
+                <?php ob_start(); ?>
                 <section class="job-card">
 
                     <div class="job-top">
@@ -344,6 +392,20 @@
                     </a>
 
                 </section>
+
+                <?php
+                $job2Html = ob_get_clean();
+                if (jobMatchesSearch($job2Html, $search)) {
+                    echo $job2Html;
+                    $matchingJobs++;
+                }
+                ?>
+
+                <?php if ($matchingJobs === 0): ?>
+                    <p class="no-jobs-message" role="status">
+                        No jobs found matching your search. Please try another keyword.
+                    </p>
+                <?php endif; ?>
 
             </div>
 

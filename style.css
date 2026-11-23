@@ -2193,3 +2193,38 @@ nav a[aria-current="page"] {
     }
 
 }
+
+/* JOBS PAGE: PHP SEARCH BAR (TEMPORARY, BEFORE MYSQL INTEGRATION) */
+.jobs-section .jobs-search-form {
+    max-width: 850px;
+    margin: 0 0 40px;
+}
+
+.jobs-section .search-controls .search-clear {
+    color: #527e1c;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.jobs-section .search-controls .search-clear:hover {
+    color: #17231f;
+}
+
+.jobs-section .no-jobs-message {
+    padding: 24px;
+    border: 1px solid #dfe5dc;
+    border-radius: 8px;
+    background: #f7f7f0;
+    color: #17231f;
+}
+
+@media (max-width: 760px) {
+    .jobs-section .jobs-search-form {
+        max-width: 100%;
+    }
+
+    .jobs-section .search-controls .search-clear {
+        text-align: center;
+    }
+}
